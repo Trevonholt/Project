@@ -2,7 +2,7 @@
 require_once("util-db.php");
 require_once("model-actors.php");
 
-$pageTitle="genres";
+$pageTitle="Actors";
 include "view-header.php";
 $actors=selectActors();
 include "view-actors.php";
