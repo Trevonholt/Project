@@ -20,16 +20,22 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post.php">Post</a>
+          <a class="nav-link" href="directors.php">Directors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post.php">Post</a>
+          <a class="nav-link" href="genres.php">Genres</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post.php">Post</a>
+          <a class="nav-link" href="actors.php">Actors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="post.php">Post</a>
+          <a class="nav-link" href="prod.php">Production Companies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="movies.php">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="prod-with-directors.php">Production Companies with Directors</a>
         </li>
       </ul>
     </div>
