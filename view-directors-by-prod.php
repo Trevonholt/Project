@@ -12,13 +12,14 @@
     </thead>
     <tbody>
 <?php
-while ($genre=$genres->fetch_assoc()){
+while ($producer=$producers->fetch_assoc()){
   ?>
   <tr>
-    <td><?php echo $genre['genre_id'];?></td>
-    <td><?php echo $genre['genre_type'];?></td>
-    <td><?php echo $genre['title'];?></td>
-    <td><?php echo $genre['rated'];?></td>
+    <td><?php echo $producer['director_id'];?></td>
+    <td><?php echo $producer['director_fname'];?></td>
+    <td><?php echo $producer['director_lname'];?></td>
+    <td><?php echo $producer['director_number'];?></td>
+    <td><?php echo $producer['prod_name'];?></td>
   </tr>
   <?php
 }
