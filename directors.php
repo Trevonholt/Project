@@ -6,7 +6,7 @@ $pageTitle="genres";
 include "view-header.php";
 
 if (isset($_POST['actionType'])){
-  switch($_POST['actionType'])){
+  switch($_POST['actionType']){
     case "add":
       insertDirector($_POST['dFname'], $_POST['dLname'],$_POST['dNum']);
       break;
