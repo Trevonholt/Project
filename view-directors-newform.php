@@ -28,6 +28,7 @@
             <label for="dNum" class="form-label">Phone Number</label>
             <input type="text" class="form-control" id="dNum" name="dNum">
           </div>
+            <input type="hidden" name="actionType" value="add">
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
