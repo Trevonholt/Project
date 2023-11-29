@@ -15,7 +15,7 @@ if (isset($_POST['actionType'])){
         }
       break;
     case "Delete":
-      if (insertDirectors($_POST['did'])){
+      if (deleteDirectors($_POST['did'])){
           echo '<div class="alert alert-success" role="alert">Director Deleted.</div>';
         } else{
           echo '<div class="alert alert-danger" role="alert">Error</div>';
