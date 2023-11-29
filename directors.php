@@ -14,6 +14,13 @@ if (isset($_POST['actionType'])){
           echo '<div class="alert alert-danger" role="alert">Error</div>';
         }
       break;
+    case "Edit":
+      if (updateDirectors($_POST['dFname'], $_POST['dLname'],$_POST['dNum'],$_POST['did'])){
+          echo '<div class="alert alert-success" role="alert">Director Edited.</div>';
+        } else{
+          echo '<div class="alert alert-danger" role="alert">Error</div>';
+        }
+      break;
     case "Delete":
       if (deleteDirectors($_POST['did'])){
           echo '<div class="alert alert-success" role="alert">Director Deleted.</div>';
