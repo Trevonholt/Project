@@ -7,7 +7,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="#editDirectorModal<?php echo $director['director_id'];?>" tabindex="-1" aria-labelledby="editDirectorModalLabel<?php echo $director['director_id'];?>" aria-hidden="true">
+<div class="modal fade" id="#editDirectorModal<?php echo $director['director_id'];?>" tabindex="-1" aria-labelledby="#editDirectorModalLabel<?php echo $director['director_id'];?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
