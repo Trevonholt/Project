@@ -1,4 +1,4 @@
-<h1>Production Companies</h1>
+<h1>Production Companies with Directors</h1>
 <div class="card-group">
 <?php
 while ($prod=$prods->fetch_assoc()){
