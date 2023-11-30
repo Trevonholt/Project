@@ -21,7 +21,7 @@
             <input type="text" class="form-control" id="gType" name="gType" value="<?php echo $genre['genre_type'];?>">
           </div>
              <input type="hidden" name="gid" value="<?php echo $genre['genre_id'];?>">
-            <input type="hidden" name="actionType" value="add">
+            <input type="hidden" name="actionType" value="edit">
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
