@@ -41,7 +41,7 @@ function updateProds($pName, $state, $city, $pid) {
     }
 }
 
-function deleteDirectors($pid) {
+function deleteProds($pid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("delete from prodComp where prod_id=?");
