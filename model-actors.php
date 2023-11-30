@@ -31,7 +31,7 @@ function updateActors($aFname, $aLname, $aNum, $aid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `actors` set `actor_fname`=?, `actor_lname`=?, `actor_number`=? where actor_id=?");
-        $stmt->bind_param("sssi", $dFname, $dLname, $dNum, $did);
+        $stmt->bind_param("sssi", $aFname, $aLname, $aNum, $aid);
         $success=$stmt->execute();
         $conn->close();
         return $success;
