@@ -5,6 +5,8 @@
 <?php
 include "view-actors-newform.php";
 ?>
+  </div>
+</div>
 <h1>Actors</h1>
 <div class="table-responsive">
   <table class="table">
