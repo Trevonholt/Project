@@ -9,21 +9,21 @@ if (isset($_POST['actionType'])){
   switch($_POST['actionType']){
     case "add":
       if (insertGenres($_POST['gType'])){
-          echo '<div class="alert alert-success" role="alert">Director Added.</div>';
+          echo '<div class="alert alert-success" role="alert">Genre Added.</div>';
         } else{
           echo '<div class="alert alert-danger" role="alert">Error</div>';
         }
       break;
     case "edit":
       if (updateGenres($_POST['gType'],$_POST['gid'])){
-          echo '<div class="alert alert-success" role="alert">Director Edited.</div>';
+          echo '<div class="alert alert-success" role="alert">Genre Edited.</div>';
         } else{
           echo '<div class="alert alert-danger" role="alert">Error</div>';
         }
       break;
     case "Delete":
       if (deleteGenres($_POST['gid'])){
-          echo '<div class="alert alert-success" role="alert">Director Deleted.</div>';
+          echo '<div class="alert alert-success" role="alert">Genre Deleted.</div>';
         } else{
           echo '<div class="alert alert-danger" role="alert">Error</div>';
         }
