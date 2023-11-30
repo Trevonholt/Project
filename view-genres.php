@@ -27,7 +27,7 @@ while ($genre=$genres->fetch_assoc()){
     <td><?php echo $genre['genre_type'];?></td>
     <td>
 <?php
-include "view-directors-editform.php";
+include "view-genres-editform.php";
 ?>
     </td>
     <td>
