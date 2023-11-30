@@ -15,14 +15,14 @@ if (isset($_POST['actionType'])){
         }
       break;
     case "edit":
-      if (updateDirectors($_POST['aFname'], $_POST['aLname'],$_POST['aNum'],$_POST['aid'])){
+      if (updateActors($_POST['aFname'], $_POST['aLname'],$_POST['aNum'],$_POST['aid'])){
           echo '<div class="alert alert-success" role="alert">Actor Edited.</div>';
         } else{
           echo '<div class="alert alert-danger" role="alert">Error</div>';
         }
       break;
     case "Delete":
-      if (deleteDirectors($_POST['aid'])){
+      if (deleteActors($_POST['aid'])){
           echo '<div class="alert alert-success" role="alert">Actor Deleted.</div>';
         } else{
           echo '<div class="alert alert-danger" role="alert">Error</div>';
