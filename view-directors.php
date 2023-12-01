@@ -46,6 +46,12 @@ include "view-directors-editform.php";
           </svg>
         </button>
     </td>
+        <td>
+          <form method="post" action="movies-by-directors.php>
+            <input type="hidden" name="did" value="<?php echo $director['director_id'];?>">
+            <button type="submit" class="btn btn-primary">Movies</button>
+          </form>
+        </td>
   </tr>
   <?php
 }
