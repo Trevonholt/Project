@@ -40,6 +40,7 @@ while ($prod=$prods->fetch_assoc()){
             </svg>
           </button>
         </form>
+     </div>
       </div>
     </div>
       </li>
