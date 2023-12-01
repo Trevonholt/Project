@@ -11,6 +11,7 @@ include "view-prod-with-directors-newform.php";
 <div class="card-group">
 <?php
 while ($prod=$prods->fetch_assoc()){
+?>
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><?php echo $prod['prod_name'];?></h5>
