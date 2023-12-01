@@ -4,7 +4,7 @@ require_once("model-prods.php");
 
 $pageTitle="Production Companies";
 include "view-header.php";
-
+$prods=selectProds();
 if (isset($_POST['actionType'])){
   switch($_POST['actionType']){
     case "add":
@@ -31,7 +31,7 @@ if (isset($_POST['actionType'])){
   }
 }
 
-$prods=selectProds();
+
 include "view-prods.php";
 include "view-footer.php";
 ?>
