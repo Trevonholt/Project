@@ -18,7 +18,6 @@ include "view-prods-newform.php";
       <th>City</th>  
         <th></th>
         <th></th>
-        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -46,12 +45,6 @@ include "view-prods-editform.php";
           </svg>
         </button>
   </td>
-        <td>
-          <form method="post" action="directors-by-prod.php">
-          <input type="hidden" name="pid" value="<?php echo $prod['prod_id'];?>">
-          <button type="submit" class="btn btn-primary">Directors</button>
-      </form>
-    </td>
   </tr>
   <?php
 }
