@@ -20,6 +20,7 @@ while ($prod=$prods->fetch_assoc()){
 <?php
   $directors=selectDirectorsByProd($prod['prod_id']);
   while ($director=$directors->fetch_assoc()){
+?>
     <li class="list-group-item">
     <div class="row">
       <div class="col">
