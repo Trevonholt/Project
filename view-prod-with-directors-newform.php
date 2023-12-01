@@ -18,7 +18,10 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="pid" class="form-label">Production Comapny</label>
-              <input type="text" class="form-control" id="pid" name="pid">
+<?php
+$prodlist= selectProdsForInput();
+include "view-prods-input-list.php";
+?>
             </div>
             <div class="mb-3">
               <label for="gid" class="form-label">Genre</label>
