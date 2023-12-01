@@ -45,6 +45,7 @@ include "edit-form.php";
       </div>
     </div>
     </li>
+<?php
   }
 ?>
       </ul>
@@ -52,6 +53,7 @@ include "edit-form.php";
       <p class="card-text"><small class="text-body-secondary">State: <?php echo $prod['state'];?></small></p>
     </div>
   </div>
+<?php
 }
 ?>
 </div>
