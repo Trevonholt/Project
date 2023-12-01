@@ -29,7 +29,6 @@ while ($prod=$prods->fetch_assoc()){
       <div class="col-auto">
 
       </div>
-     <div class="col-auto">
         <form method="post" action="">
           <input type="hidden" name="mid" value="<?php echo $director['movie_id']; ?>">
           <input type="hidden" name="actionType" value="Delete">
@@ -40,7 +39,6 @@ while ($prod=$prods->fetch_assoc()){
             </svg>
           </button>
         </form>
-     </div>
       </div>
     </div>
       </li>
