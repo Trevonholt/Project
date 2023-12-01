@@ -28,6 +28,7 @@ include "view-prods-input-list.php";
               <label for="gid" class="form-label">Genre</label>
 <?php
 $genreList= selectGenreForInput();
+$selectedGenre=0;
 include "view-genre-input-list.php";
 ?>
             </div>
@@ -35,6 +36,7 @@ include "view-genre-input-list.php";
               <label for="did" class="form-label">Director</label>
 <?php
 $directorList= selectDirectorForInput();
+$selectedDirector=0;
 include "view-director-input-list.php";
 ?>
             </div>
@@ -42,6 +44,7 @@ include "view-director-input-list.php";
                 <label for="aid" class="form-label">Actor</label>
 <?php
 $actorList= selectActorForInput();
+$selectedActor=0;
 include "view-actor-input-list.php";
 ?>
              </div>
