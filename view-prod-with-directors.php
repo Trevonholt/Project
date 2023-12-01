@@ -23,9 +23,9 @@ while ($prod=$prods->fetch_assoc()){
 ?>
     <li class="list-group-item"><?php echo $director['director_fname'];?> <?php echo $director['director_lname'];?> - <?php echo $director['title'];?>: (<?php echo $director['rated'];?>) - <?php echo $director['director_number'];?></li>
     <div class="col-auto">
-<?php
+<!-- <?php
 include "view-prod-with-directors-editform.php";
-?>
+?> -->
       </div>
     <div class="col-auto">
         <form method="post" action="">
