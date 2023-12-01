@@ -17,7 +17,6 @@ include "view-movies-newform.php";
       <th>Movie Rating</th>  
         <th></th>
         <th></th>
-        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -29,11 +28,6 @@ while ($movie=$movies->fetch_assoc()){
     <td><?php echo $movie['title'];?></td>
     <td><?php echo $movie['rated'];?></td>
     <td><a href="genres-by-movies.php?id=<?php echo $movie['movie_id'];?>">Genres</td>
-      <td>
-<?php
-include "view-movies-editform.php";
-?>
-      </td>
   <td>
      <form method="post" action="">
         <input type="hidden" name="mid" value="<?php echo $movie['movie_id'];?>">
