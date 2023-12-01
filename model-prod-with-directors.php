@@ -26,4 +26,46 @@ function selectDirectorsByProd($did) {
         throw $e;
     }
 }
+
+function insertMov($pid, $gid, $did, $aid, $title, $rated) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `movies` (`prod_id`, `genre_id`, `director_id`, `actor_id`, `title`, `rated`) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("iiiiss", $pid, $gid, $did, $aid, $title, $rated);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function updateMov($pid, $gid, $did, $aid, $title, $rated, $mid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update `movies` set `prod_id` = ?, `genre_id` = ?, `director_id` = ?, `actor_id` = ?, `title` = ?, `rated` = ? where movie_id = ?");
+        $stmt->bind_param("iiiissi", $pid, $gid, $did, $aid, $title, $rated, $mid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function deleteMov($mid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from section where movie_id=?");
+        $stmt->bind_param("i", $mid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
