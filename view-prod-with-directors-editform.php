@@ -18,6 +18,7 @@
         <form method="post" action="">
           <div class="mb-3">
             <label for="pid<?php echo $director['movie_id']; ?>" class="form-label">Production Company</label>
+            <input type="text" class="form-control" id="pid<?php echo $director['movie_id']; ?>" name="pid" value="<?php echo $director['movie_id']; ?>">
 <!-- <?php
 $instructorList = selectInstructorsForInput();
 $selectedInstructor = $course['instructor_id'];
