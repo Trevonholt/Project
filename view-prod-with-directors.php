@@ -27,13 +27,11 @@ while ($prod=$prods->fetch_assoc()){
         <?php echo $director['director_fname'];?> <?php echo $director['director_lname'];?> - <?php echo $director['title'];?>: (<?php echo $director['rated'];?>) - <?php echo $director['director_number'];?>
         </div>
       <div class="col-auto">
-<!-- <?php
-include "view-prod-with-directors-editform.php";
-?> -->
+
       </div>
       <div class="col-auto">
        <form method="post" action="">
-        <input type="hidden" name="mid" value="<?php echo $director['movie_id']; ?>">
+        <input type="hidden" name="mid" value="<?php echo $prod['movie_id']; ?>">
         <input type="hidden" name="actionType" value="Delete">
         <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
