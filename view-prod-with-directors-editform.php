@@ -26,15 +26,27 @@ include "view-prods-input-list.php";
           </div>
           <div class="mb-3">
             <label for="gid<?php echo $director['movie_id']; ?>" class="form-label">Genre</label>
-            <input type="text" class="form-control" id="gid<?php echo $director['movie_id']; ?>" name="gid" value="<?php echo $director['genre_id']; ?>">
+<?php
+$genreList= selectGenreForInput();
+$selectedGenre=$director['genre_id'];
+include "view-genre-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="did<?php echo $director['movie_id']; ?>" class="form-label">Director</label>
-            <input type="text" class="form-control" id="did<?php echo $director['movie_id']; ?>" name="did" value="<?php echo $director['genre_id']; ?>">
+<?php
+$directorList= selectDirectorForInput();
+$selectedDirector=$director['director_id'];
+include "view-director-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="aid<?php echo $director['movie_id']; ?>" class="form-label">Actor</label>
-            <input type="text" class="form-control" id="aid<?php echo $director['movie_id']; ?>" name="aid" value="<?php echo $director['actor_id']; ?>">
+<?php
+$actorList= selectActorForInput();
+$selectedActor=$director['actor_id'];
+include "view-actor-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="title<?php echo $director['movie_id']; ?>" class="form-label">Movie Title</label>
