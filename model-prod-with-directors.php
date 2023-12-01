@@ -15,7 +15,7 @@ function selectProds() {
 function selectDirectorsByProd($did) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT m.title, m.rated, d.director_id,director_fname,director_lname,director_number,prod_name, movie_id,genre_id,prod_id,actor_id FROM `directors` d JOIN movies m on m.director_id=d.director_id JOIN prodComp p on m.prod_id=p.prod_id WHERE m.prod_id=?");
+        $stmt = $conn->prepare("SELECT m.title, m.rated, d.director_id,director_fname,director_lname,director_number,prod_name, movie_id,m.genre_id,m.prod_id,m.actor_id FROM `directors` d JOIN movies m on m.director_id=d.director_id JOIN prodComp p on m.prod_id=p.prod_id WHERE m.prod_id=?");
         $stmt->bind_param("i", $did);
         $stmt->execute();
         $result = $stmt->get_result();
