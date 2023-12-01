@@ -21,13 +21,13 @@ if (isset($_POST['actionType'])){
           echo '<div class="alert alert-danger" role="alert">Error</div>';
         }
       break;
-    // case "Delete":
-    //   if (deleteProds($_POST['pid'])){
-    //       echo '<div class="alert alert-success" role="alert">Production Company Deleted.</div>';
-    //     } else{
-    //       echo '<div class="alert alert-danger" role="alert">Error</div>';
-    //     }
-    //   break;
+     case "Delete":
+       if (deleteProds($_POST['pid'])){
+           echo '<div class="alert alert-success" role="alert">Production Company Deleted.</div>';
+         } else{
+           echo '<div class="alert alert-danger" role="alert">Error</div>';
+         }
+       break;
   }
 }
 
