@@ -58,7 +58,7 @@ function updateMov($pid, $gid, $did, $aid, $title, $rated, $mid) {
 function deleteMov($mid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from section where movie_id=?");
+        $stmt = $conn->prepare("delete from movies where movie_id=?");
         $stmt->bind_param("i", $mid);
         $success = $stmt->execute();
         $conn->close();
