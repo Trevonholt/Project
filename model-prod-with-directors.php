@@ -27,6 +27,59 @@ function selectDirectorsByProd($did) {
     }
 }
 
+function selectProdsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT prod_id, prod_name FROM `prodComp` order by prod_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function selectGenreForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT genre_id, genre_type FROM `genre` order by genre_type");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function selectDirectorForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT director_id, director_fname, director_lname FROM `directors` order by director_fname");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function selectActorForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT actor_id, actor_fname, actor_lname FROM `actors` order by actor_fname");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function insertMov($pid, $gid, $did, $aid, $title, $rated) {
     try {
         $conn = get_db_connection();
