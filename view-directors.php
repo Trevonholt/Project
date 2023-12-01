@@ -48,7 +48,7 @@ include "view-directors-editform.php";
       </form>
     </td>
         <td>
-          <form method="post" action="movies-by-directors.php>
+          <form method="post" action="movies-by-director.php>
             <input type="hidden" name="tid" value="<?php echo $director['director_id'];?>">
             <button type="submit" class="btn btn-primary">Movies</button>
           </form>
