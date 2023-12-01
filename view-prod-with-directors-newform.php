@@ -25,15 +25,24 @@ include "view-prods-input-list.php";
             </div>
             <div class="mb-3">
               <label for="gid" class="form-label">Genre</label>
-              <input type="text" class="form-control" id="gid" name="gid">
+<?php
+$genreList= selectGenreForInput();
+include "view-genre-input-list.php";
+?>
             </div>
             <div class="mb-3">
               <label for="did" class="form-label">Director</label>
-              <input type="text" class="form-control" id="did" name="did">
+<?php
+$directorList= selectDirectorForInput();
+include "view-director-input-list.php";
+?>
             </div>
             <div class="mb-3">
                 <label for="aid" class="form-label">Actor</label>
-                <input type="text" class="form-control" id="aid" name="aid">
+<?php
+$actorList= selectActorForInput();
+include "view-actor-input-list.php";
+?>
              </div>
             <div class="mb-3">
               <label for="title" class="form-label">Movie Title</label>
