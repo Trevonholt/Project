@@ -17,20 +17,20 @@
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="prod_id" class="form-label">Production Company ID</label>
-            <input type="text" class="form-control" id="prod_id" name="prod_id">
+            <label for="pid" class="form-label">Production Company ID</label>
+            <input type="text" class="form-control" id="pid" name="pid">
           </div>
           <div class="mb-3">
-            <label for="genre_id" class="form-label">Genre ID</label>
-            <input type="text" class="form-control" id="genre_id" name="genre_id">
+            <label for="gid" class="form-label">Genre ID</label>
+            <input type="text" class="form-control" id="gid" name="gid">
           </div>
           <div class="mb-3">
-            <label for="director_id" class="form-label">Director ID</label>
-            <input type="text" class="form-control" id="director_id" name="director_id">
+            <label for="did" class="form-label">Director ID</label>
+            <input type="text" class="form-control" id="did" name="did">
           </div>
           <div class="mb-3">
-            <label for="actor_id" class="form-label">Actor ID</label>
-            <input type="text" class="form-control" id="actor_id" name="actor_id">
+            <label for="aid" class="form-label">Actor ID</label>
+            <input type="text" class="form-control" id="aid" name="aid">
           </div>
           <div class="mb-3">
             <label for="title" class="form-label">Movie Title</label>
