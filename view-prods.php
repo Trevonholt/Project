@@ -47,8 +47,8 @@ include "view-prods-editform.php";
         </button>
   </td>
         <td>
-      <form method="post" action="directors-by-prod.php">
-        <input type="hidden" name="did" value="<?php echo $prod['prod_id'];?>">
+          <form method="post" action="directors-by-prod.php">
+          <input type="hidden" name="pid" value="<?php echo $prod['prod_id'];?>">
           <button type="submit" class="btn btn-primary">Directors</button>
       </form>
     </td>
