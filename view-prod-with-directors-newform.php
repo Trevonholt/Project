@@ -20,6 +20,7 @@
               <label for="pid" class="form-label">Production Comapny</label>
 <?php
 $prodlist= selectProdsForInput();
+$selectedProd=0;
 include "view-prods-input-list.php";
 ?>
             </div>
