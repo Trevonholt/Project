@@ -12,7 +12,7 @@ while ($prod=$prods->fetch_assoc()){
   $directors=selectDirectorsByProd($prod['prod_id']);
   while ($director=$directors->fetch_assoc()){
 ?>
-    <li class="list-group-item"><?php echo $director['title'];?> Rated-<?php echo $director['rated'];?> - <?php echo $director['director_fname'];?> <?php echo $director['director_lname'];?> - <?php echo $director['director_number'];?></li>
+    <li class="list-group-item"><?php echo $director['title'];?>: Rated-<?php echo $director['rated'];?> - <?php echo $director['director_fname'];?> <?php echo $director['director_lname'];?> - <?php echo $director['director_number'];?></li>
 <?php
   }
 ?>
