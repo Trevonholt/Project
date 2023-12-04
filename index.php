@@ -3,7 +3,7 @@ $pageTitle="Home";
 include "view-header.php";
 ?>
 <style>
-  .home-container {
+.home-container {
   width: 100%;
   height: auto;
   display: flex;
@@ -79,29 +79,23 @@ include "view-header.php";
   object-fit: cover;
 }
 .home-image1 {
-  left: -55px;
-  width: 552px;
-  bottom: -2px;
-  height: 252px;
-  position: absolute;
-  object-fit: cover;
-}
-.home-image2 {
-  top: 471px;
-  left: -1px;
+  top: 511px;
+  left: 0px;
   width: 471px;
   height: 285px;
   position: absolute;
   align-self: flex-start;
   object-fit: cover;
 }
-.home-image3 {
-  left: 466px;
-  width: 408px;
-  bottom: -3px;
-  height: 532px;
-  position: absolute;
+.home-image2 {
+  width: 552px;
+  height: 252px;
   align-self: flex-end;
+  object-fit: cover;
+}
+.home-image3 {
+  height: 532px;
+  align-self: stretch;
   object-fit: cover;
 }
 @media(max-width: 991px) {
@@ -145,6 +139,7 @@ include "view-header.php";
   </style>
   
 <div>
+  <link href="./home.css" rel="stylesheet" />
   <div class="home-container">
     <div class="home-hero">
       <div class="home-container1">
@@ -177,12 +172,12 @@ include "view-header.php";
       />
     </div>
     <img
-      src="https://www.universalpictures.com/assets/img/universal-share.jpg"
+      src="https://images.thedirect.com/media/article_full/disney-movies-titles.jpg"
       alt="image"
       class="home-image1"
     />
     <img
-      src="https://images.thedirect.com/media/article_full/disney-movies-titles.jpg"
+      src="https://www.universalpictures.com/assets/img/universal-share.jpg"
       alt="image"
       class="home-image2"
     />
