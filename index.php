@@ -39,7 +39,7 @@ include "view-header.php";
   margin-bottom: var(--dl-space-space-doubleunit);
 }
 .home-text1 {
-  color: #000000;
+/*   color: #000000; */
   max-width: 500px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
