@@ -2,7 +2,7 @@
 $pageTitle="Home";
 include "view-header.php";
 ?>
-<div>
+<style>
   .home-container {
   width: 100%;
   height: auto;
@@ -142,8 +142,11 @@ include "view-header.php";
     bottom: auto;
   }
 }
-
-  <div>
+  </style?
+  
+<html lang="en">
+<body>
+<div>
   <link href="./home.css" rel="stylesheet" />
   <div class="home-container">
     <div class="home-hero">
@@ -193,7 +196,8 @@ include "view-header.php";
     />
   </div>
 </div>
-</div>
+  </body>
+</HTML>
 
 
 <?php
