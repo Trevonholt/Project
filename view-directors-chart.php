@@ -13,7 +13,7 @@
       labels: [
 <?php
 while ($director=$directors->fetch_assoc()){
-  echo $director ['director_fname','director_lname'] . ",";
+  echo $director ['director_fname'] . ",";
 }
 ?>
       ],
