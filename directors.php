@@ -2,7 +2,7 @@
 require_once("util-db.php");
 require_once("model-directors.php");
 
-$pageTitle="genres";
+$pageTitle="Directors";
 include "view-header.php";
 
 if (isset($_POST['actionType'])){
