@@ -92,11 +92,11 @@ include "view-header.php";
     <div class="home-hero">
       <div class="home-container1">
         <h1 class="home-text slide-in-text">Log Your Favorite Movies</h1>
-        <span class="home-text1">
+        <h5 class="home-text1">
           This website will allow you to track your movies. Within this website
           you can list the director, favorite actor, movie title, genre, and
           production company.
-        </span>
+        </h5>
       </div>
       <img
         alt="image"
