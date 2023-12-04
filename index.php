@@ -83,6 +83,17 @@ include "view-header.php";
     font-size: 50px;
   }
 }
+  .slide-in-text {
+  animation: slideIn 1.5s ease-out;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
   </style>
   
 <div>
@@ -90,7 +101,7 @@ include "view-header.php";
   <div class="home-container">
     <div class="home-hero">
       <div class="home-container1">
-        <h1 class="home-text">Log Your Favorite Movies</h1>
+        <h1 class="home-text slide-in-text">Log Your Favorite Movies</h1>
         <span class="home-text1">
           This website will allow you to track your movies. Within this website
           you and list the director, favorite actor, movie title, genre, and
