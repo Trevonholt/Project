@@ -2,7 +2,8 @@
 $pageTitle="Home";
 include "view-header.php";
 ?>
-.container {
+<div>
+  .home-container {
   width: 100%;
   height: auto;
   display: flex;
@@ -11,7 +12,7 @@ include "view-header.php";
   align-items: center;
   flex-direction: column;
 }
-.hero {
+.home-hero {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -25,7 +26,7 @@ include "view-header.php";
   flex-direction: row;
   justify-content: space-between;
 }
-.container1 {
+.home-container1 {
   width: auto;
   height: auto;
   display: flex;
@@ -33,16 +34,16 @@ include "view-header.php";
   align-items: flex-start;
   flex-direction: column;
 }
-.text {
+.home-text {
   font-size: 72px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
-.text1 {
+.home-text1 {
   color: #000000;
   max-width: 500px;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
-.image {
+.home-image {
   width: 476px;
   height: 347px;
   z-index: 100;
@@ -51,7 +52,7 @@ include "view-header.php";
   object-fit: cover;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.turquoise-cirble {
+.home-turquoise-cirble {
   top: auto;
   left: auto;
   right: 400px;
@@ -59,7 +60,7 @@ include "view-header.php";
   position: absolute;
   object-fit: cover;
 }
-.orange-circle {
+.home-orange-circle {
   top: 250px;
   left: auto;
   right: 530px;
@@ -67,7 +68,7 @@ include "view-header.php";
   position: absolute;
   object-fit: cover;
 }
-.purple-circle {
+.home-purple-circle {
   top: -250px;
   left: auto;
   right: -200px;
@@ -77,7 +78,7 @@ include "view-header.php";
   position: absolute;
   object-fit: cover;
 }
-.image1 {
+.home-image1 {
   left: -55px;
   width: 552px;
   bottom: -2px;
@@ -85,7 +86,7 @@ include "view-header.php";
   position: absolute;
   object-fit: cover;
 }
-.image2 {
+.home-image2 {
   top: 471px;
   left: -1px;
   width: 471px;
@@ -94,7 +95,7 @@ include "view-header.php";
   align-self: flex-start;
   object-fit: cover;
 }
-.image3 {
+.home-image3 {
   left: 466px;
   width: 408px;
   bottom: -3px;
@@ -104,26 +105,26 @@ include "view-header.php";
   object-fit: cover;
 }
 @media(max-width: 991px) {
-  .hero {
+  .home-hero {
     flex-direction: column;
   }
-  .container1 {
+  .home-container1 {
     align-items: center;
     margin-bottom: var(--dl-space-space-doubleunit);
   }
-  .text {
+  .home-text {
     text-align: center;
   }
-  .image {
+  .home-image {
     width: 80%;
     margin-top: var(--dl-space-space-tripleunit);
   }
-  .turquoise-cirble {
+  .home-turquoise-cirble {
     top: auto;
     right: 30%;
     bottom: -30px;
   }
-  .orange-circle {
+  .home-orange-circle {
     top: auto;
     left: 10%;
     right: auto;
@@ -131,10 +132,10 @@ include "view-header.php";
   }
 }
 @media(max-width: 767px) {
-  .text {
+  .home-text {
     font-size: 50px;
   }
-  .purple-circle {
+  .home-purple-circle {
     top: -345px;
     left: auto;
     right: -379px;
@@ -142,64 +143,57 @@ include "view-header.php";
   }
 }
 
-import React from 'react'
-
-import styles from './home.module.css'
-
-const Home = (props) => {
-  return (
-    <div className={styles['container']}>
-      <div className={styles['hero']}>
-        <div className={styles['container1']}>
-          <h1 className={styles['text']}>Log Your Favorite Movies</h1>
-          <span className={styles['text1']}>
-            This website will allow you to track your movies. Within this
-            website you and list the director, favorite actor, movie title,
-            genre, and production company.
-          </span>
-        </div>
-        <img
-          alt="image"
-          src="https://upload.wikimedia.org/wikipedia/en/b/b4/At-the-movies.jpg"
-          className={styles['image']}
-        />
-        <img
-          alt="image"
-          src="/turquoise%20circle-1300w.png"
-          className={styles['turquoise-cirble']}
-        />
-        <img
-          alt="image"
-          src="/orange%20circle-1300w.png"
-          className={styles['orange-circle']}
-        />
-        <img
-          alt="image"
-          src="/purple%20circle1-700h.png"
-          className={styles['purple-circle']}
-        />
+  <div>
+  <link href="./home.css" rel="stylesheet" />
+  <div class="home-container">
+    <div class="home-hero">
+      <div class="home-container1">
+        <h1 class="home-text">Log Your Favorite Movies</h1>
+        <span class="home-text1">
+          This website will allow you to track your movies. Within this website
+          you and list the director, favorite actor, movie title, genre, and
+          production company.
+        </span>
       </div>
       <img
-        src="https://www.universalpictures.com/assets/img/universal-share.jpg"
         alt="image"
-        className={styles['image1']}
+        src="https://upload.wikimedia.org/wikipedia/en/b/b4/At-the-movies.jpg"
+        class="home-image"
       />
       <img
-        src="https://images.thedirect.com/media/article_full/disney-movies-titles.jpg"
         alt="image"
-        className={styles['image2']}
+        src="/turquoise%20circle-1300w.png"
+        class="home-turquoise-cirble"
       />
       <img
-        src="https://images.squarespace-cdn.com/content/v1/5efce5920d28887981c5bd9b/1607026464156-CR7GRV3HQANOZQXT7C6C/Warner+Bros.+2021+releases.jpg"
         alt="image"
-        className={styles['image3']}
+        src="/orange%20circle-1300w.png"
+        class="home-orange-circle"
+      />
+      <img
+        alt="image"
+        src="/purple%20circle1-700h.png"
+        class="home-purple-circle"
       />
     </div>
-  )
-}
-
-export default Home
-
+    <img
+      src="https://www.universalpictures.com/assets/img/universal-share.jpg"
+      alt="image"
+      class="home-image1"
+    />
+    <img
+      src="https://images.thedirect.com/media/article_full/disney-movies-titles.jpg"
+      alt="image"
+      class="home-image2"
+    />
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/5efce5920d28887981c5bd9b/1607026464156-CR7GRV3HQANOZQXT7C6C/Warner+Bros.+2021+releases.jpg"
+      alt="image"
+      class="home-image3"
+    />
+  </div>
+</div>
+</div>
 
 
 <?php
