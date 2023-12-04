@@ -142,7 +142,7 @@ include "view-header.php";
     bottom: auto;
   }
 }
-  </style?
+  </style>
   
 <div>
   <div class="home-container">
