@@ -2,7 +2,7 @@
 $pageTitle="Home";
 include "view-header.php";
 ?>
-<style>
+<style class="container">
 .home-container {
   width: 100%;
   height: auto;
