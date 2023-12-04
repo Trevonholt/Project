@@ -127,7 +127,7 @@ include "view-header.php";
         <h1 class="home-text slide-in-text">Log Your Favorite Movies</h1>
         <span class="home-text1">
           This website will allow you to track your movies. Within this website
-          you and list the director, favorite actor, movie title, genre, and
+          you can list the director, favorite actor, movie title, genre, and
           production company.
         </span>
       </div>
