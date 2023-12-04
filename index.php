@@ -109,11 +109,7 @@ include "view-header.php";
       alt="image"
       class="home-image1"
     />
-    <img
-      src="https://images.thedirect.com/media/article_full/disney-movies-titles.jpg"
-      alt="image"
-      class="home-image2"
-    />
+
   </div>
 </div>
 
