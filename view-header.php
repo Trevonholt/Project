@@ -37,6 +37,9 @@
         <li class="nav-item">
           <a class="nav-link" href="prod-with-directors.php">Production Companies with Directors</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="directors-chart.php">Directors Chart</a>
+        </li>
       </ul>
     </div>
   </div>
