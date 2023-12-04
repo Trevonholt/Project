@@ -44,57 +44,21 @@ include "view-header.php";
   margin-bottom: var(--dl-space-space-doubleunit);
 }
 .home-image {
-  width: 476px;
-  height: 347px;
+  width: 516px;
+  height: 426px;
   z-index: 100;
   transform: rotate(-10deg);
   margin-top: -6rem;
   object-fit: cover;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-turquoise-cirble {
-  top: auto;
-  left: auto;
-  right: 400px;
-  bottom: 0px;
-  position: absolute;
-  object-fit: cover;
-}
-.home-orange-circle {
-  top: 250px;
-  left: auto;
-  right: 530px;
-  bottom: auto;
-  position: absolute;
-  object-fit: cover;
-}
-.home-purple-circle {
-  top: -250px;
-  left: auto;
-  right: -200px;
-  width: 700px;
-  bottom: auto;
-  height: 700px;
-  position: absolute;
-  object-fit: cover;
-}
 .home-image1 {
-  top: 511px;
-  left: 0px;
-  width: 471px;
-  height: 285px;
-  position: absolute;
-  align-self: flex-start;
+  height: 252px;
+  align-self: stretch;
   object-fit: cover;
 }
 .home-image2 {
-  width: 552px;
-  height: 252px;
-  align-self: flex-end;
-  object-fit: cover;
-}
-.home-image3 {
-  height: 532px;
+  height: 285px;
   align-self: stretch;
   object-fit: cover;
 }
@@ -113,32 +77,16 @@ include "view-header.php";
     width: 80%;
     margin-top: var(--dl-space-space-tripleunit);
   }
-  .home-turquoise-cirble {
-    top: auto;
-    right: 30%;
-    bottom: -30px;
-  }
-  .home-orange-circle {
-    top: auto;
-    left: 10%;
-    right: auto;
-    bottom: 50px;
-  }
 }
 @media(max-width: 767px) {
   .home-text {
     font-size: 50px;
   }
-  .home-purple-circle {
-    top: -345px;
-    left: auto;
-    right: -379px;
-    bottom: auto;
-  }
 }
   </style>
   
-<div class="container">
+<div>
+
   <div class="home-container">
     <div class="home-hero">
       <div class="home-container1">
@@ -154,36 +102,16 @@ include "view-header.php";
         src="https://upload.wikimedia.org/wikipedia/en/b/b4/At-the-movies.jpg"
         class="home-image"
       />
-      <img
-        alt="image"
-        src="/turquoise%20circle-1300w.png"
-        class="home-turquoise-cirble"
-      />
-      <img
-        alt="image"
-        src="/orange%20circle-1300w.png"
-        class="home-orange-circle"
-      />
-      <img
-        alt="image"
-        src="/purple%20circle1-700h.png"
-        class="home-purple-circle"
-      />
     </div>
     <img
-      src="https://images.thedirect.com/media/article_full/disney-movies-titles.jpg"
+      src="https://www.universalpictures.com/assets/img/universal-share.jpg"
       alt="image"
       class="home-image1"
     />
     <img
-      src="https://www.universalpictures.com/assets/img/universal-share.jpg"
+      src="https://images.thedirect.com/media/article_full/disney-movies-titles.jpg"
       alt="image"
       class="home-image2"
-    />
-    <img
-      src="https://images.squarespace-cdn.com/content/v1/5efce5920d28887981c5bd9b/1607026464156-CR7GRV3HQANOZQXT7C6C/Warner+Bros.+2021+releases.jpg"
-      alt="image"
-      class="home-image3"
     />
   </div>
 </div>
