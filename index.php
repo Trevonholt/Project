@@ -144,10 +144,7 @@ include "view-header.php";
 }
   </style?
   
-<html lang="en">
-<body>
 <div>
-  <link href="./home.css" rel="stylesheet" />
   <div class="home-container">
     <div class="home-hero">
       <div class="home-container1">
@@ -196,8 +193,6 @@ include "view-header.php";
     />
   </div>
 </div>
-  </body>
-</HTML>
 
 
 <?php
