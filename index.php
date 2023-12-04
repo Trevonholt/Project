@@ -83,9 +83,32 @@ include "view-header.php";
     font-size: 50px;
   }
 }
-  .slide-in-text {
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.slide-in-text {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
   animation: slideIn 1.5s ease-out;
-  opacity: 0;
+}
+
+.slide-in-text::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0.5;
+  animation: ripple 1.5s ease-out;
 }
 
 @keyframes slideIn {
