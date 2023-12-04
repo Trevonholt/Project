@@ -2,9 +2,9 @@
   <div class="col">
   </div>
   <div class="col-auto">
-<?php
+<!-- <?php
 include "view-movies-newform.php";
-?>
+?> -->
   </div>
 </div>
 <h1>Movies</h1>
