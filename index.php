@@ -138,8 +138,7 @@ include "view-header.php";
 }
   </style>
   
-<div>
-  <link href="./home.css" rel="stylesheet" />
+<div class="container">
   <div class="home-container">
     <div class="home-hero">
       <div class="home-container1">
